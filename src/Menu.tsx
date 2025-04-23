@@ -166,13 +166,13 @@ const Menu = () => {
         <legend className='legend'>Extras:</legend>
         <ul className='extra-ul'>
           <li className='extra-list'>
-            Add Cheese: <span className='extra-span'>50,00L.L</span>
+            Add Cheese: <span className='extra-span'>50,000L.L</span>
           </li>
           <li className='extra-list'>
-            Jello <span className='extra-span'>100,00L.L</span>
+            Jello <span className='extra-span'>100,000L.L</span>
           </li>
           <li className='extra-list'>
-            Castar <span className='extra-span'>150,00L.L</span>
+            Castar <span className='extra-span'>150,000L.L</span>
           </li>
         </ul>
       </fieldset>
