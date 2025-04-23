@@ -7,11 +7,7 @@ const Menu = () => {
         {/* Remove the h1 since we'll put the text on the image */}
         <div className='logo-container'>
           <div className='logo-text-top'>Sandwish</div>
-          <img
-            className='logo-image'
-            src='/public/sandwish.png'
-            alt='Sandwish Inn'
-          />
+          <img className='logo-image' src='/sandwish.png' alt='Sandwish Inn' />
           <div className='logo-text-bottom'>Inn</div>
         </div>
         <div className='opening-info'>
