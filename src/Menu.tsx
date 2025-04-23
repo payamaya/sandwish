@@ -63,7 +63,11 @@ const Menu = () => {
           <div className='logo-text-bottom'>Inn</div>
         </div>
         <div className='opening-info'>
-          <p className='opening'>Opening at 07:00 Tuesday April 22nd</p>
+          <p className='opening'>
+            <time dateTime='2024-04-22T07:00'>
+              Opening at 07:00 Tuesday <br /> <span>April 22nd</span>
+            </time>
+          </p>
           <p className='delivery'>
             Delivery:
             <a href='tel:0096191531725' className='delivery-link'>

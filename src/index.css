@@ -20,14 +20,15 @@
 
 body {
   background-color: var(--body-bg-color);
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   place-items: center;
   min-width: fit-content;
   min-height: 100vh;
   transition: background-color 0.3s ease;
 }
-
+html {
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -37,7 +38,13 @@ a:hover {
   color: #535bf2;
 }
 label {
-  color: #ffcaa6;
+  color: var(--text-color);
+}
+span {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: bold;
+  text-decoration: underline var(--text-color);
 }
 
 h1 {
