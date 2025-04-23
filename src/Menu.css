@@ -2,8 +2,10 @@
 .menu-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 16px;
   font-family: Arial, sans-serif;
+  border: 2px solid var(--border-color);
+
   background-color: var(--bg-color);
 }
 
@@ -129,6 +131,7 @@ h3 {
 
 .logo-container {
   position: relative;
+  margin-top: 2rem;
   margin-bottom: 10px;
   text-align: center;
   display: flex;
