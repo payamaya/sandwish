@@ -70,8 +70,8 @@ const Menu = () => {
           </p>
           <p className='delivery'>
             Delivery:
-            <a href='tel:0096191531725' className='delivery-link'>
-              91531725
+            <a href='tel:0096181531725' className='delivery-link'>
+              81531725
             </a>
           </p>
         </div>
