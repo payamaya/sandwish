@@ -209,6 +209,7 @@ h3 {
 }
 fieldset {
   border: 1px solid var(--border-color);
+  color: var(--text-color);
 }
 legend {
   padding-right: 0.5rem;
