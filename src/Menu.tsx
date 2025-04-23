@@ -1,0 +1,135 @@
+import './Menu.css' // We'll create this CSS file next
+
+const Menu = () => {
+  return (
+    <div className='menu-container'>
+      <header className='header'>
+        {/* Remove the h1 since we'll put the text on the image */}
+        <div className='logo-container'>
+          <div className='logo-text-top'>Sandwish</div>
+          <img
+            className='logo-image'
+            src='/src/assets/sandwish.png'
+            alt='Sandwish Inn'
+          />
+          <div className='logo-text-bottom'>Inn</div>
+        </div>
+        <div className='opening-info'>
+          <p className='opening'>Opening at 07:00 Tuesday April 22nd</p>
+          <p className='delivery'>
+            Delivery:{' '}
+            <a href='tel:0096191531725' className='delivery-link'>
+              91531725
+            </a>
+          </p>
+        </div>
+      </header>
+
+      <div className='menu-content'>
+        <section className='sandwiches-section'>
+          <div className='section-header'>
+            <h2>Sandwishes</h2>
+            <div className=' sandwich-image'>
+              <img className='img' src='/src/assets/baguette.png' />
+              {/* Replace with your actual image */}
+              {/* <p>Sandwich Image</p> */}
+            </div>
+          </div>
+          <ul className='menu-list'>
+            <li>
+              <label htmlFor=''>Kasbe:</label>{' '}
+              <span className='price'>300,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Makanek:</label>{' '}
+              <span className='price'>300,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Soujouk:</label>{' '}
+              <span className='price'>300,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Fajita:</label>{' '}
+              <span className='price'>300,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Kafta:</label>{' '}
+              <span className='price'>300,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Ham & Cheese:</label>{' '}
+              <span className='price'>300,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''> Fries box:</label>{' '}
+              <span className='price'>150,000L.L</span>
+            </li>
+          </ul>
+        </section>
+
+        <section className='drinks-section'>
+          <div className='section-header'>
+            <div className='drink-image'>
+              <img className='img' src='/src/assets/cola.png' />
+              {/* Replace with your actual image */}
+              {/* <p>Cola Drink</p> */}
+            </div>
+            <h2>Drinks</h2>
+          </div>
+          <ul className='menu-list'>
+            <li>
+              <label htmlFor=''>Soft drink plastic:</label>{' '}
+              <span className='price'>70,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Soft drink glass:</label>{' '}
+              <span className='price'>30,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Water:</label>{' '}
+              <span className='price'>25,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Coffee::</label>
+              <span className='price'>50,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Nescafe:</label>
+              <span className='price'>60,000L.L</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      {/* Placeholder for the map you'll add later */}
+      <div className='map-container'>
+        <h3>Our Location</h3>
+        <div className='map-placeholder'>
+          <iframe
+            src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.225348381774!2d35.55576631521086!3d33.88668098065161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDUzJzEyLjEiTiAzNcKwMzMnMjcuNSJF!5e0!3m2!1sen!2slb!4v${Math.floor(Date.now() / 1000)}!5m2!1sen!2slb`}
+            width='100%'
+            height='300'
+            style={{ border: 0 }}
+            // allowFullScreen=''
+            loading='lazy'
+            referrerPolicy='no-referrer-when-downgrade'
+            title='Sandwish Inn Location'
+          ></iframe>
+        </div>
+        <div className='location-info'>
+          <p>Sed el Bouchrieh, Lebanon</p>
+          <a
+            href='https://maps.google.com?q=33.886689,35.557916'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='directions-link'
+          >
+            Get Directions →
+          </a>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Menu
