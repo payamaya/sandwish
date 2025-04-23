@@ -89,27 +89,31 @@ const Menu = () => {
           </div>
           <ul className='menu-list'>
             <li>
-              <label htmlFor=''>Kasbe:</label>{' '}
+              <label htmlFor=''>Taouk:</label>
+              <span className='price'>350,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Kasbe:</label>
               <span className='price'>300,000L.L</span>
             </li>
             <li>
-              <label htmlFor=''>Makanek:</label>{' '}
+              <label htmlFor=''>Makanek:</label>
               <span className='price'>300,000L.L</span>
             </li>
             <li>
-              <label htmlFor=''>Soujouk:</label>{' '}
+              <label htmlFor=''>Soujouk:</label>
               <span className='price'>300,000L.L</span>
             </li>
             <li>
-              <label htmlFor=''>Fajita:</label>{' '}
+              <label htmlFor=''>Fajita:</label>
               <span className='price'>300,000L.L</span>
             </li>
             <li>
-              <label htmlFor=''>Kafta:</label>{' '}
+              <label htmlFor=''>Kafta:</label>
               <span className='price'>300,000L.L</span>
             </li>
             <li>
-              <label htmlFor=''>Ham & Cheese:</label>{' '}
+              <label htmlFor=''>Ham & Cheese:</label>
               <span className='price'>300,000L.L</span>
             </li>
             <li>
@@ -123,8 +127,6 @@ const Menu = () => {
           <div className='section-header'>
             <div className='drink-image'>
               <img className='img' src='/cola.png' />
-              {/* Replace with your actual image */}
-              {/* <p>Cola Drink</p> */}
             </div>
             <h2>Drinks</h2>
           </div>
@@ -138,11 +140,19 @@ const Menu = () => {
               <span className='price'>30,000L.L</span>
             </li>
             <li>
-              <label htmlFor=''>Water:</label>{' '}
-              <span className='price'>25,000L.L</span>
+              <label htmlFor=''>Water Small:</label>{' '}
+              <span className='price'>30,000L.L</span>
             </li>
             <li>
-              <label htmlFor=''>Coffee::</label>
+              <label htmlFor=''>Water Big:</label>{' '}
+              <span className='price'>50,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Beer:</label>{' '}
+              <span className='price'>120,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Coffee:</label>
               <span className='price'>50,000L.L</span>
             </li>
             <li>
@@ -152,6 +162,20 @@ const Menu = () => {
           </ul>
         </section>
       </div>
+      <fieldset>
+        <legend className='legend'>Extras:</legend>
+        <ul className='extra-ul'>
+          <li className='extra-list'>
+            Add Cheese: <span className='extra-span'>50,00L.L</span>
+          </li>
+          <li className='extra-list'>
+            Jello <span className='extra-span'>100,00L.L</span>
+          </li>
+          <li className='extra-list'>
+            Castar <span className='extra-span'>150,00L.L</span>
+          </li>
+        </ul>
+      </fieldset>
 
       {/* Placeholder for the map you'll add later */}
       <div className='map-container'>

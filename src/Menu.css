@@ -193,6 +193,17 @@ h3 {
 .directions-link:hover {
   color: #ffc7a1;
 }
+.extra-span {
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
+
+fieldset {
+  border: 1px solid var(--border-color);
+}
+legend {
+  padding-right: 0.5rem;
+}
 
 @media (max-width: 768px) {
   .menu-content {

@@ -27,12 +27,22 @@ body {
   min-height: 100vh;
   transition: background-color 0.3s ease;
 }
-html {
-}
+
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
+}
+li {
+  list-style: none;
+}
+.extra-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.extra-ul {
+  padding: 0;
 }
 a:hover {
   color: #535bf2;
