@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
 }
 
 .header {
@@ -12,17 +13,18 @@
 }
 
 .header h1 {
-  color: #d35400;
+  color: var(--accent-color);
   font-size: 2.5rem;
 }
 
 .delivery {
   font-weight: bold;
   font-size: 1.2rem;
+  color: var(--text-color);
 }
 
 .delivery-link {
-  color: #d35400;
+  color: var(--accent-color);
   text-decoration: none;
   transition: color 0.2s;
   padding-left: 1rem;
@@ -45,7 +47,8 @@
   flex: 1;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 10px rgba(255, 165, 80, 0.335);
+  background-color: var(--section-bg);
+  box-shadow: 0 2px 10px var(--shadow-color);
 }
 
 .section-header {
@@ -59,10 +62,15 @@
   flex-direction: row-reverse;
 }
 
-h2 {
-  color: #ffcaa6;
+h2,
+h3 {
+  color: var(--text-color);
   font-size: 1.8rem;
   margin: 0;
+}
+
+h3 {
+  font-size: 1.6rem;
 }
 
 .image-placeholder {
@@ -83,17 +91,17 @@ h2 {
 
 .menu-list li {
   padding: 10px 0;
-  border-bottom: 1px dashed #fda943;
+  border-bottom: 1px dashed var(--border-color);
   font-size: 1.1rem;
   display: flex;
   width: 300px;
-
   justify-content: space-between;
+  color: var(--text-color);
 }
 
 .price {
   font-weight: bold;
-  color: #ff8331;
+  color: var(--accent-color);
 }
 
 .map-placeholder {
@@ -104,25 +112,27 @@ h2 {
   border-radius: 8px;
   margin-top: 30px;
   padding: 0.5rem;
-  color: #d35400;
-  box-shadow: 0 2px 10px rgba(255, 165, 80, 0.335);
+  color: var(--accent-color);
+  box-shadow: 0 2px 10px var(--shadow-color);
+  background-color: var(--section-bg);
 }
 
 .header {
   text-align: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background-color: var(--bg-color); */
 }
 
 .logo-container {
   position: relative;
   margin-bottom: 10px;
   text-align: center;
-  /* width: 100%; */
   display: flex;
   justify-content: center;
+  background-color: var(--section-bg);
 }
 
 .logo-image {
@@ -130,8 +140,8 @@ h2 {
   display: block;
   border-radius: 6px;
   padding-inline: 4rem;
-  width: 100%;
-  box-shadow: 0 2px 16px rgba(255, 194, 136, 0.335);
+  /* width: 100%; */
+  box-shadow: 0 2px 16px var(--shadow-color);
 }
 
 .logo-text-top,
@@ -141,47 +151,45 @@ h2 {
   right: 0;
   font-size: 2rem;
   font-weight: bold;
-  color: #d35400; /* Or your preferred color */
+  color: var(--accent-color);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .logo-text-top {
-  top: 10px; /* Adjust positioning as needed */
+  top: 10px;
 }
 
 .logo-text-bottom {
-  bottom: 0px; /* Adjust positioning as needed */
+  bottom: 0px;
+}
+
+.para {
+  color: var(--text-color);
 }
 
 .opening-info {
-  background-color: #361b00;
-  border: 1px solid #ffcaa6;
-  padding: 10px 20px;
+  background-color: var(--section-bg);
+  border: 1px solid var(--border-color);
+  /* padding: 10px 20px; */
   border-radius: 5px;
   margin-top: 40px;
   width: 100%;
+  box-shadow: var(--shadow-color);
 }
 
 .opening {
   margin-bottom: 5px;
   font-size: 1.1rem;
+  color: var(--accent-color);
 }
-.opening {
-  color: #d35400;
-}
-.delivery {
-  font-weight: bold;
-  color: #ffc7a1;
 
-  font-size: 1.2rem;
-}
 .directions-link {
-  color: #dc5800;
+  color: var(--accent-color);
 }
 .directions-link:hover {
   color: #ffc7a1;
 }
-/* Rest of your existing CSS remains the same */
+
 @media (max-width: 768px) {
   .menu-content {
     flex-direction: column;

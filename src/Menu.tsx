@@ -1,8 +1,60 @@
+import { useEffect, useState } from 'react'
 import './Menu.css' // We'll create this CSS file next
-
 const Menu = () => {
+  const [isDarkMode, setIsDarkMode] = useState(true)
+
+  useEffect(() => {
+    // Apply the color scheme when the component mounts or when isDarkMode changes
+    applyColorScheme(isDarkMode)
+  }, [isDarkMode])
+
+  const applyColorScheme = (darkMode: boolean) => {
+    const root = document.documentElement
+    if (darkMode) {
+      // Dark mode colors
+      root.style.setProperty('--bg-color', '#421c02')
+      root.style.setProperty('--body-bg-color', '#2a1200') // Darker brown for body
+      root.style.setProperty('--text-color', '#ffcaa6')
+      root.style.setProperty('--accent-color', '#d35400')
+      root.style.setProperty('--section-bg', '#361b00')
+      root.style.setProperty('--border-color', '#fda943')
+      root.style.setProperty('--shadow-color', 'rgba(255, 165, 80, 0.335)')
+    } else {
+      // Light mode colors - corrected values
+      root.style.setProperty('--bg-color', '#ffcaa6') // Light peach container
+      root.style.setProperty('--body-bg-color', '#ffcaa6') // Slightly darker peach for body
+      root.style.setProperty('--text-color', '#5a2c02') // Dark brown text
+      root.style.setProperty('--accent-color', '#d35400')
+      root.style.setProperty('--section-bg', '#ffebd8')
+      root.style.setProperty('--border-color', '#d35400')
+      root.style.setProperty('--shadow-color', 'rgb(153, 62, 1)')
+    }
+  }
+
+  const toggleColorScheme = () => {
+    setIsDarkMode(!isDarkMode)
+  }
+
   return (
     <div className='menu-container'>
+      <button
+        onClick={toggleColorScheme}
+        className='theme-toggle'
+        style={{
+          position: 'absolute',
+          top: '55px',
+          left: '55px',
+          zIndex: 1000,
+          padding: '8px 16px',
+          borderRadius: '4px',
+          backgroundColor: isDarkMode ? '#ffcaa6' : '#d35400',
+          color: isDarkMode ? '#fff' : '#333',
+          border: 'none',
+          cursor: 'pointer',
+        }}
+      >
+        {isDarkMode ? '☀️' : '🌙'}
+      </button>
       <header className='header'>
         {/* Remove the h1 since we'll put the text on the image */}
         <div className='logo-container'>
@@ -113,7 +165,7 @@ const Menu = () => {
           ></iframe>
         </div>
         <div className='location-info'>
-          <p>Sed el Bouchrieh, Lebanon</p>
+          <p className='para'>Sed el Bouchrieh, Lebanon</p>
           <a
             href='https://maps.google.com?q=33.886689,35.557916'
             target='_blank'
