@@ -92,7 +92,7 @@ h2 {
 
 .price {
   font-weight: bold;
-  color: #9f4000;
+  color: #ff8331;
 }
 
 .map-placeholder {
@@ -119,14 +119,16 @@ h2 {
   position: relative;
   margin-bottom: 10px;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
 }
 
 .logo-image {
-  width: 200px;
   height: auto;
   display: block;
   border-radius: 6px;
+  padding-inline: 4rem;
   width: 100%;
   box-shadow: 0 2px 16px rgba(255, 194, 136, 0.335);
 }

@@ -9,7 +9,7 @@ const Menu = () => {
           <div className='logo-text-top'>Sandwish</div>
           <img
             className='logo-image'
-            src='/src/assets/sandwish.png'
+            src='/public/sandwish.png'
             alt='Sandwish Inn'
           />
           <div className='logo-text-bottom'>Inn</div>
@@ -30,7 +30,7 @@ const Menu = () => {
           <div className='section-header'>
             <h2>Sandwishes</h2>
             <div className=' sandwich-image'>
-              <img className='img' src='/src/assets/baguette.png' />
+              <img className='img' src='/public/baguette.png' />
               {/* Replace with your actual image */}
               {/* <p>Sandwich Image</p> */}
             </div>
@@ -70,7 +70,7 @@ const Menu = () => {
         <section className='drinks-section'>
           <div className='section-header'>
             <div className='drink-image'>
-              <img className='img' src='/src/assets/cola.png' />
+              <img className='img' src='/public/cola.png' />
               {/* Replace with your actual image */}
               {/* <p>Cola Drink</p> */}
             </div>
