@@ -25,6 +25,7 @@
   color: #d35400;
   text-decoration: none;
   transition: color 0.2s;
+  padding-left: 1rem;
 }
 
 .delivery-link:hover {
@@ -154,7 +155,7 @@ h2 {
 
 .opening-info {
   background-color: #361b00;
-  border: 2px solid black;
+  border: 1px solid #ffcaa6;
   padding: 10px 20px;
   border-radius: 5px;
   margin-top: 40px;
@@ -170,7 +171,8 @@ h2 {
 }
 .delivery {
   font-weight: bold;
-  color: #27ae60;
+  color: #ffc7a1;
+
   font-size: 1.2rem;
 }
 .directions-link {

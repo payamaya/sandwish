@@ -13,7 +13,7 @@ const Menu = () => {
         <div className='opening-info'>
           <p className='opening'>Opening at 07:00 Tuesday April 22nd</p>
           <p className='delivery'>
-            Delivery:{' '}
+            Delivery:
             <a href='tel:0096191531725' className='delivery-link'>
               91531725
             </a>
@@ -26,7 +26,7 @@ const Menu = () => {
           <div className='section-header'>
             <h2>Sandwishes</h2>
             <div className=' sandwich-image'>
-              <img className='img' src='/public/baguette.png' />
+              <img className='img' src='/baguette.png' />
               {/* Replace with your actual image */}
               {/* <p>Sandwich Image</p> */}
             </div>
@@ -66,7 +66,7 @@ const Menu = () => {
         <section className='drinks-section'>
           <div className='section-header'>
             <div className='drink-image'>
-              <img className='img' src='/public/cola.png' />
+              <img className='img' src='/cola.png' />
               {/* Replace with your actual image */}
               {/* <p>Cola Drink</p> */}
             </div>
