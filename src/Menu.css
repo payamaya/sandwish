@@ -87,6 +87,7 @@ h3 {
 .menu-list {
   list-style-type: none;
   padding: 0;
+  width: 300px;
 }
 
 .menu-list li {
@@ -94,7 +95,7 @@ h3 {
   border-bottom: 1px dashed var(--border-color);
   font-size: 1.1rem;
   display: flex;
-  width: 300px;
+  width: 100%;
   justify-content: space-between;
   color: var(--text-color);
 }
@@ -199,7 +200,9 @@ h3 {
     flex-direction: row !important;
     margin-bottom: 15px;
   }
-
+  .menu-list {
+    width: 100%;
+  }
   .image-placeholder {
     width: 100px;
     height: 100px;
