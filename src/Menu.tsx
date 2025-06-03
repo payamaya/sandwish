@@ -64,16 +64,25 @@ const Menu = () => {
         </div>
         <div className='opening-info'>
           <p className='opening'>
-            <time dateTime='2024-04-22T07:00'>
-              Opening at 07:00 Tuesday <br /> <span>April 22nd</span>
+            <span className='shiny-text'>Opening hours :</span>
+            <br />
+            <time className='open-hour' dateTime='12:00'>
+              12:00
             </time>
+            <i className='arrow-animate icon'> → </i>
+            <time className='open-hour' dateTime='23:00'>
+              23:00
+            </time>
+            <br />
+            <strong>Closed on Sundays</strong>
           </p>
-          <p className='delivery'>
+
+          <section className='delivery'>
             Delivery:
             <a href='tel:0096181531725' className='delivery-link'>
               81531725
             </a>
-          </p>
+          </section>
         </div>
       </header>
 
@@ -83,8 +92,6 @@ const Menu = () => {
             <h2>Sandwishes</h2>
             <div className=' sandwich-image'>
               <img className='img' src='/baguette.png' />
-              {/* Replace with your actual image */}
-              {/* <p>Sandwich Image</p> */}
             </div>
           </div>
           <ul className='menu-list'>
