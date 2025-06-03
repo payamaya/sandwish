@@ -106,10 +106,10 @@ const Menu = () => {
             </li>
             <li>
               <label htmlFor=''>Fajita:</label>
-              <span className='price'>300,000L.L</span>
+              <span className='price'>350,000L.L</span>
             </li>
             <li>
-              <label htmlFor=''>Kafta:</label>
+              <label htmlFor=''>Ham & Cheese:</label>
               <span className='price'>300,000L.L</span>
             </li>
             <li>
@@ -117,12 +117,36 @@ const Menu = () => {
               <span className='price'>300,000L.L</span>
             </li>
             <li>
+              <label htmlFor=''> Fries sandwish(L):</label>{' '}
+              <span className='price'>250,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''> Fries sandwish(S):</label>{' '}
+              <span className='price'>200,000L.L</span>
+            </li>
+            <li>
               <label htmlFor=''>Crispy Sand:</label>
               <span className='price'>350,000L.L</span>
             </li>
             <li>
-              <label htmlFor=''> Fries box:</label>{' '}
-              <span className='price'>150,000L.L</span>
+              <label htmlFor=''>Fajitas + Fries(L):</label>
+              <span className='price'>550,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Fajitas + Fries(S):</label>
+              <span className='price'>450,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Lebanese burger + Fries:</label>
+              <span className='price'>450,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Crispy Sand + Fries:</label>
+              <span className='price'>450,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Tawouk + Fries:</label>
+              <span className='price'>450,000L.L</span>
             </li>
           </ul>
         </section>
@@ -149,14 +173,18 @@ const Menu = () => {
             </li>
             <li>
               <label htmlFor=''>Water Big:</label>{' '}
-              <span className='price'>50,000L.L</span>
+              <span className='price'>40,000L.L</span>
             </li>
             <li>
               <label htmlFor=''>Beer:</label>{' '}
-              <span className='price'>120,000L.L</span>
+              <span className='price'>110,000L.L</span>
             </li>
             <li>
-              <label htmlFor=''>Coffee:</label>
+              <label htmlFor=''>Buz:</label>{' '}
+              <span className='price'>100,000L.L</span>
+            </li>
+            <li>
+              <label htmlFor=''>Najjar:</label>
               <span className='price'>50,000L.L</span>
             </li>
             <li>
@@ -170,13 +198,16 @@ const Menu = () => {
         <legend className='legend'>Extras:</legend>
         <ul className='extra-ul'>
           <li className='extra-list'>
-            Add Cheese: <span className='extra-span'>50,000L.L</span>
-          </li>
-          <li className='extra-list'>
             Jello <span className='extra-span'>100,000L.L</span>
           </li>
           <li className='extra-list'>
             Castar <span className='extra-span'>150,000L.L</span>
+          </li>
+          <li className='extra-list'>
+            Add Cheese: <span className='extra-span'>50,000L.L</span>
+          </li>
+          <li className='extra-list'>
+            Fries box: <span className='extra-span'>150,000L.L</span>
           </li>
         </ul>
       </fieldset>
