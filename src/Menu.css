@@ -272,6 +272,29 @@ legend {
   min-width: 50px;
   font-size: larger;
 }
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  /* padding: 16px 16px; */
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+}
+
 @media (max-width: 768px) {
   .menu-content {
     flex-direction: column;

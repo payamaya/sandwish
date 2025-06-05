@@ -1,3 +1,6 @@
+import { FaWhatsapp } from 'react-icons/fa'
+;<FaWhatsapp size={20} style={{ marginRight: '8px' }} />
+
 import { useEffect, useState } from 'react'
 import './Menu.css' // We'll create this CSS file next
 const Menu = () => {
@@ -55,6 +58,15 @@ const Menu = () => {
       >
         {isDarkMode ? '☀️' : '🌙'}
       </button>
+      <a
+        href='https://wa.me/96181531725'
+        target='_blank'
+        rel='noopener noreferrer'
+        className='whatsapp-button'
+      >
+        <FaWhatsapp size={36} />
+      </a>
+
       <header className='header'>
         {/* Remove the h1 since we'll put the text on the image */}
         <div className='logo-container'>
