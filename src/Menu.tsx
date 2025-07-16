@@ -243,7 +243,7 @@ const Menu = () => {
           </li>
         </ul>
       </fieldset>
-      <fieldset>
+      <fieldset className='animated-border'>
         <legend className='legend'>Special Offers:</legend>
         <ul className='extra-ul'>
           <li className='extra-list'>

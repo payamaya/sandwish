@@ -215,12 +215,36 @@ h3 {
   padding: 0;
 }
 fieldset {
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
   color: var(--text-color);
 }
 legend {
   padding-right: 0.5rem;
   font-weight: 700;
+}
+@keyframes borderGlow {
+  0% {
+    border-color: #c10000;
+  }
+  25% {
+    border-color: #ac9500;
+  }
+  50% {
+    border-color: #00bc71;
+  }
+  75% {
+    border-color: #001fcc;
+  }
+  100% {
+    border-color: #c10000;
+  }
+}
+
+.animated-border {
+  animation: borderGlow 4s infinite;
+  border-radius: 1px;
+  border-width: 2px;
+  border-style: solid;
 }
 @keyframes shineColors {
   0% {
