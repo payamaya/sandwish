@@ -150,33 +150,6 @@ const Menu = () => {
             </li>
           </ul>
         </section>
-
-        <section className='drinks-section'>
-          <div className='section-header'>
-            <div className='drink-image'>
-              <img className='img' src='/cola.png' />
-            </div>
-            <h2>Drinks</h2>
-          </div>
-          <ul className='menu-list'>
-            <li>
-              <label htmlFor=''>Soft drink plastic:</label>{' '}
-              <span className='price'>70,000L.L</span>
-            </li>
-            <li>
-              <label htmlFor=''>Soft drink glass:</label>{' '}
-              <span className='price'>30,000L.L</span>
-            </li>
-            <li>
-              <label htmlFor=''>Water Small:</label>{' '}
-              <span className='price'>30,000L.L</span>
-            </li>
-            <li>
-              <label htmlFor=''>Water Big:</label>{' '}
-              <span className='price'>40,000L.L</span>
-            </li>
-          </ul>
-        </section>
       </div>
       <div className='menu-content'>
         <section className='sandwiches-section'>
