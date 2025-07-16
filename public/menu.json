@@ -1,0 +1,26 @@
+{
+  "Main Dishes": {
+    "Tawouk (small)": "350,000 L.L",
+    "Tawouk (large)": "450,000L.L",
+    "Kasbe": "300,000 L.L",
+    "Makanek": "350,000 L.L",
+    "Soujouk": "350,000L.L",
+    "Fajita (small)": "400,000L.L",
+    "Fajita (large)": "500,000L.L",
+    "Fries sandwish(L)": "300,000L.L",
+    "Fries sandwish(S)": "250,000L.L",
+    "Lebanese burge + Fries + soft drink": "550,000L.L"
+  },
+  "Extras": {
+    "Add Cheese": "50,000 L.L"
+  },
+  "Desserts": {
+    "Jello": "100,000 L.L",
+    "Castar": "100,000 L.L"
+  },
+  "Drinks": {
+    "Soft drink plastic": "70,000 L.L",
+    "Soft drink glass": "30,000L.L",
+    "Water small": "30,000L.L"
+  }
+}
