@@ -136,10 +136,6 @@ const Menu = () => {
               <span className='price'>500,000L.L</span>
             </li>
             <li>
-              <label htmlFor=''>Ham & Cheese:</label>
-              <span className='price'>300,000L.L</span>
-            </li>
-            <li>
               <label htmlFor=''> Fries sandwish(L):</label>{' '}
               <span className='price'>300,000L.L</span>
             </li>
